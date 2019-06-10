@@ -512,7 +512,7 @@ def volt_watt_mode_imbalanced_grid(imbalance_resp, vw_curves, vw_response_time):
                     eut.volt_watt(params=vw_params)
                     # eut.volt_var(params={'Ena': True})
                     ts.log_debug('Initial EUT VW settings are %s' % eut.volt_watt())
-                    ts.log_debug('curve points:  %s' % v_pairs[vw_curve])
+                    ts.log_debug('curve points:  %s' % v_pairs)
 
                     # STD_CHANGE: Remove step g) or add more information about the volt-var configuration.
                     # Jay NOTE: Not sure if the committee is trying to test asymmetric VW/VV response here, but most
